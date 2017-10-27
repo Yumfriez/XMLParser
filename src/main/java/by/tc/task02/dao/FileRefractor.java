@@ -18,11 +18,11 @@ public class FileRefractor {
     private static final String META_INFO="<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
     private static final char END_OF_STRING='\n';
 
-    public File rebuildFile(File fileForRebuild) throws OldTempFileDeleteException{
+    public File rebuildFile(File fileForRebuild) throws OldTempFileDeleteException, IOException {
 
-        String filePath=fileForRebuild.getAbsolutePath().replaceAll(fileForRebuild.getName(),TEMP_FILE);
+        ClassLoader classLoader=getClass().getClassLoader();
 
-        File tempFile=new File(filePath);
+        File tempFile=new File(classLoader.getResource(TEMP_FILE).getFile());
 
         if(tempFile.exists()){
             if(!tempFile.delete()){

@@ -30,7 +30,7 @@ public class NodeDAOImpl implements NodeDAO {
     private static final String EMPTY_SPACE="";
     private static final String REGEX_SPACE="\\s";
     private static final String CLOSING_TAG_ATTRIBUTES="[/>]";
-    private static final String SOURCE_FILE_NAME="my.xml";
+    private static final String SOURCE_FILE_NAME= "task02.xml";
     private static final String SPLITTER_SYMBOL="=";
     private static final String ATTRIBUTE_MARKING_SYMBOLS="[\">]";
     private static final int FIRST_WORD_INDEX=0;
@@ -78,9 +78,11 @@ public class NodeDAOImpl implements NodeDAO {
 
         } catch (OldTempFileDeleteException e) {
             System.out.println(e.getMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-     return null;
+        return null;
     }
 
     private void removeTag(String currentString){
