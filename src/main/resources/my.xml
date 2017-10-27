@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+    <book number="1" lang="russian">
+        <name>
+            The Captain's Daughter
+        </name>
+        <author>
+            <authorname>
+                Aleksandr            </authorname>
+            <lastName>Pushkin
+            </lastName>
+        </author>
+        <year>
+
+            1836
+        </year>
+    </book>
+    <book number="2" lang="english">        <name>            Great Expectations
+    </name>
+
+        <author>
+
+            <authorname>
+                Charles</authorname>
+            <lastName>Dickens</lastName>
+
+
+
+        </author>
+        <year>
+            1861
+        </year>
+    </book>
+</catalog>
