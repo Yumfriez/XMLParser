@@ -1,6 +1,6 @@
-package by.tc.task02;
+package by.tc.task02.service;
 
-import by.tc.task02.service.NodeServiceImpl;
+import by.tc.task02.service.impl.NodeServiceImpl;
 
 public final class ServiceFactory {
 	private static final ServiceFactory instance = new ServiceFactory();

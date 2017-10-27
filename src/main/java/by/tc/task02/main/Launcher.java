@@ -1,7 +1,7 @@
 package by.tc.task02.main;
 
-import by.tc.task02.NodeService;
-import by.tc.task02.ServiceFactory;
+import by.tc.task02.service.NodeService;
+import by.tc.task02.service.ServiceFactory;
 import by.tc.task02.entity.NodeEntity;
 import by.tc.task02.optional.Printer;
 
