@@ -29,10 +29,12 @@ public class Printer {
         List<ContentEntity> contentEntities=nodeEntity.getContentEntities();
         for (ContentEntity contentEntity : contentEntities) {
             System.out.print(spaces +CONTENT_MARKER + contentEntity.getName()+NAME_AND_VALUE_SPLITTER+contentEntity.getValue());
+            System.out.print(END_OF_CONTENT_MARKER);
             if(!contentEntity.getAttributes().isEmpty()){
-                System.out.print(contentEntity.getAttributes());
+                System.out.println(ATTRIBUTES_MARKER+contentEntity.getAttributes());
+            }else{
+                System.out.println();
             }
-            System.out.println(END_OF_CONTENT_MARKER);
         }
         List<NodeEntity> nodeEntities=nodeEntity.getNodeEntities();
         for (NodeEntity innerNodeEntity : nodeEntities) {
